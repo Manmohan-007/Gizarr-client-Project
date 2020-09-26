@@ -91,7 +91,7 @@ class SidebarContent extends Component {
                         <li className="menu-title">{this.props.t('Apps')}</li>
 
                         <li>
-                            <Link to="#" className=" waves-effect">
+                            <Link to="/login" className=" waves-effect">
                                 <i className="bx bx-calendar"></i>
                                 <span>{this.props.t('Login')}</span>
                             </Link>
@@ -108,27 +108,28 @@ class SidebarContent extends Component {
                         <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bx-store"></i>
-                                <span>{this.props.t('List Profiles')}</span>
+                                <span>{this.props.t('Profiles')}</span>
                             </Link>
                             <ul className="sub-menu" aria-expanded="false">
-                                <li><Link to="/contacts-profile">{this.props.t('Profile Details')}</Link></li>
-                                {/* <li><Link to="ecommerce-product-detail">{this.props.t('Product Detail')}</Link></li>
-                                <li><Link to="ecommerce-orders">{this.props.t('Orders')}</Link></li>
-                                <li><Link to="ecommerce-customers">{this.props.t('Customers')}</Link></li>
+                                <li><Link to="/contacts-profile">{this.props.t('Summary')}</Link></li>
+                                <li><Link to="/#">{this.props.t('Details')}</Link></li>
+                                {/* <li><Link to="ecommerce-orders">{this.props.t('Orders')}</Link></li> */}
+                                {/* <li><Link to="ecommerce-customers">{this.props.t('Customers')}</Link></li>
                                 <li><Link to="ecommerce-cart">{this.props.t('Cart')}</Link></li>
                                 <li><Link to="ecommerce-checkout">{this.props.t('Checkout')}</Link></li>
                                 <li><Link to="ecommerce-shops">{this.props.t('Shops')}</Link></li>
-                                <li><Link to="ecommerce-add-product">{this.props.t('Add Product')}</Link></li> */}
+                                <li><Link to="ecommerce-add-product">{this.props.t('Add Product')}</Link></li>  */}
                             </ul>
                         </li>
 
                         <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bx-bitcoin"></i>
-                                <span>{this.props.t('List of Videos ')}</span>
+                                <span>{this.props.t('Videos ')}</span>
                             </Link>
                             <ul className="sub-menu" aria-expanded="false">
-                                <li><Link to="#">{this.props.t('Video in Detail')}</Link></li>
+                                <li><Link to="/contacts-profile">{this.props.t('Summary')}</Link></li>
+                                <li><Link to="/#">{this.props.t('Details')}</Link></li>
                                 {/* <li><Link to="crypto-buy-sell">{this.props.t('Buy/Sell')}</Link></li>
                                 <li><Link to="crypto-exchange">{this.props.t('Exchange')}</Link></li>
                                 <li><Link to="crypto-lending">{this.props.t('Lending')}</Link></li>
@@ -152,52 +153,52 @@ class SidebarContent extends Component {
                         <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bx-receipt"></i>
-                                <span>{this.props.t('List of files')}</span>
+                                <span>{this.props.t('Files')}</span>
                             </Link>
                             <ul className="sub-menu" aria-expanded="false">
-                                <li><Link to="invoices-list">{this.props.t('File in Details')}</Link></li>
-                                {/* <li><Link to="invoices-detail">{this.props.t('Invoice Detail')}</Link></li> */}
+                                <li><Link to="/contacts-profile">{this.props.t('Summary')}</Link></li>
+                                <li><Link to="/#">{this.props.t('Details')}</Link></li>
                             </ul>
                         </li>
 
                         <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bx-briefcase-alt-2"></i>
-                                <span>{this.props.t('List of Messages')}</span>
+                                <span>{this.props.t('Messages')}</span>
                             </Link>
                             <ul className="sub-menu" aria-expanded="false">
-                                <li><Link to="/#">{this.props.t('Messages in  Detail')}</Link></li>
-                                {/* <li><Link to="projects-list">{this.props.t('Projects List')}</Link></li>
-                                <li><Link to="projects-overview">{this.props.t('Project Overview')}</Link></li>
-                                <li><Link to="projects-create">{this.props.t('Create New')}</Link></li> */}
+                                <li><Link to="/contacts-profile">{this.props.t('Summary')}</Link></li>
+                                <li><Link to="/#">{this.props.t('Details')}</Link></li>
+                                {/* <li><Link to="/contacts-profile">{this.props.t('Project Overview')}</Link></li> */}
+                                {/* <li><Link to="projects-create">{this.props.t('Create New')}</Link></li>  */}
                             </ul>
                         </li>
 
                         <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bx-task"></i>
-                                <span>{this.props.t('List of Meetings')}</span>
+                                <span>{this.props.t('Meetings')}</span>
                             </Link>
                             <ul className="sub-menu" aria-expanded="false">
-                                <li><Link to="#">{this.props.t('Meet in Detail')}</Link></li>
-                                {/* <li><Link to="tasks-kanban">{this.props.t('Kanban Board')}</Link></li>
-                                <li><Link to="tasks-create">{this.props.t('Create Task')}</Link></li> */}
+                                <li><Link to="/contacts-profile">{this.props.t('Summary')}</Link></li>
+                                <li><Link to="/#">{this.props.t('Details')}</Link></li>
+                                {/* <li><Link to="tasks-create">{this.props.t('Create Task')}</Link></li>  */}
                             </ul>
                         </li>
 
                         <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bxs-user-detail"></i>
-                                <span>{this.props.t('List of Rooms')}</span>
+                                <span>{this.props.t('Rooms')}</span>
                             </Link>
                             <ul className="sub-menu" aria-expanded="false">
-                                <li><Link to="/#">{this.props.t("Rooms in details")}</Link></li>
-                                {/* <li><Link to="contacts-list">{this.props.t('User List')}</Link></li>
-                                <li><Link to="contacts-profile">{this.props.t('Profile')}</Link></li> */}
+                                <li><Link to="/contacts-profile">{this.props.t('Summary')}</Link></li>
+                                <li><Link to="/#">{this.props.t('Details')}</Link></li>
+                                {/* <li><Link to="contacts-profile">{this.props.t('Profile')}</Link></li>  */}
                             </ul>
                         </li>
 
-                        <li className="menu-title">Pages</li>
+                        {/* <li className="menu-title">Pages</li> */}
                         {/* <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bx-user-circle"></i>
@@ -210,7 +211,7 @@ class SidebarContent extends Component {
                                 <li><Link to="auth-lock-screen">{this.props.t('Lock Screen')}</Link></li>
                             </ul>
                         </li> */}
-                        <li>
+                        {/* <li>
                             <Link to="/#" className="has-arrow waves-effect">
                                 <i className="bx bx-file"></i>
                                 <span>{this.props.t('Utility')}</span>
@@ -221,11 +222,11 @@ class SidebarContent extends Component {
                                 <li><Link to="#">{this.props.t('Coming Soon')}</Link></li>
                                 <li><Link to="#">{this.props.t('Timeline')}</Link></li>
                                 <li><Link to="#">{this.props.t('FAQs')}</Link></li>
-                                {/* <li><Link to="pages-pricing">{this.props.t('Pricing')}</Link></li> */}
-                                {/* <li><Link to="pages-404">{this.props.t('Error 404')}</Link></li>
-                                <li><Link to="pages-500">{this.props.t('Error 500')}</Link></li> */}
+                                <li><Link to="pages-pricing">{this.props.t('Pricing')}</Link></li> 
+                                 <li><Link to="pages-404">{this.props.t('Error 404')}</Link></li>
+                                <li><Link to="pages-500">{this.props.t('Error 500')}</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
 
                         {/* <li className="menu-title">{this.props.t('Components')}</li> */}
 

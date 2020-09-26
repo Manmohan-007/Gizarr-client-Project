@@ -36,19 +36,19 @@ class WelcomeComp extends Component {
                                     <img src={avatar1} alt="" className="img-thumbnail rounded-circle" />
                                 </div>
                                 <h5 className="font-size-15 text-truncate">Henry Price</h5>
-                                <p className="text-muted mb-0 text-truncate">UI/UX Designer</p>
+                                <p className="text-muted mb-0 text-truncate">Instructor</p>
                             </Col>
 
                             <Col sm="8">
                                 <div className="pt-4">
                                     <Row>
                                         <Col xs="6">
-                                            <h5 className="font-size-15">125</h5>
+                                            <h5 className="font-size-15">15</h5>
                                             <p className="text-muted mb-0">Projects</p>
                                         </Col>
                                         <Col xs="6">
-                                            <h5 className="font-size-15">$1245</h5>
-                                            <p className="text-muted mb-0">Revenue</p>
+                                            <h5 className="font-size-15">125</h5>
+                                            <p className="text-muted mb-0">Videos</p>
                                         </Col>
                                     </Row>
                                     <div className="mt-4">

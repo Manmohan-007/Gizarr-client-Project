@@ -33,6 +33,8 @@ class Login extends Component {
 
     componentDidMount() {
         this.props.apiError("");
+        document.title = "AmazingPage";
+
     }
 
     render() {
@@ -77,11 +79,11 @@ class Login extends Component {
                                                 {this.props.error && this.props.error ? <Alert color="danger">{this.props.error}</Alert> : null}
 
                                                 <div className="form-group">
-                                                    <AvField name="email" label="Email" value="admin@themesbrand.com" className="form-control" placeholder="Enter email" type="email" required />
+                                                    <AvField name="email" label="Email" value="" className="form-control" placeholder="Enter email" type="email" required />
                                                 </div>
 
                                                 <div className="form-group">
-                                                    <AvField name="password" label="Password" value="123456" type="password" required placeholder="Enter Password" />
+                                                    <AvField name="password" label="Password" value="" type="password" required placeholder="Enter Password" />
                                                 </div>
 
                                                 <div className="custom-control custom-checkbox">
@@ -90,7 +92,7 @@ class Login extends Component {
                                                 </div>
 
                                                 <div className="mt-3">
-                                                    <button className="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In</button>
+                                                    <Link to="/dashboard">   <button className="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In</button></Link>
                                                 </div>
 
                                                 <div className="mt-4 text-center">
@@ -101,7 +103,7 @@ class Login extends Component {
                                     </CardBody>
                                 </Card>
                                 <div className="mt-5 text-center">
-                                    <p>Don't have an account ? <Link to="register" className="font-weight-medium text-primary"> Signup now </Link> </p>
+
                                     <p>© {new Date().getFullYear()} Gazerr </p>
                                 </div>
                             </Col>

@@ -47,7 +47,7 @@ class Header extends Component {
    * Toggle sidebar
    */
   toggleMenu() {
-    this.props.toggleMenuCallback();
+    // this.props.toggleMenuCallback();
   }
 
   /**
@@ -111,9 +111,9 @@ class Header extends Component {
                 </Link>
               </div>
 
-              <button type="button" onClick={this.toggleMenu} className="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+              {/* <button type="button" onClick={this.toggleMenu} className="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
                 <i className="fa fa-fw fa-bars"></i>
-              </button>
+              </button> */}
 
               {/* <form className="app-search d-none d-lg-block">
                 <div className="position-relative">
@@ -328,20 +328,20 @@ class Header extends Component {
                 </DropdownMenu>
               </Dropdown> */}
 
-              <div className="dropdown d-none d-lg-inline-block ml-1">
-                {/* <button type="button" onClick={this.toggleFullscreen} className="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+              {/* <div className="dropdown d-none d-lg-inline-block ml-1">
+                <button type="button" onClick={this.toggleFullscreen} className="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
                   <i className="bx bx-fullscreen"></i>
-                </button> */}
-              </div>
+                </button>
+              </div> */}
 
               <NotificationDropdown />
               <ProfileMenu />
 
-              <div onClick={this.toggleRightbar} className="dropdown d-inline-block">
+              {/* <div onClick={this.toggleRightbar} className="dropdown d-inline-block">
                 <button type="button" className="btn header-item noti-icon right-bar-toggle waves-effect">
                   <i className="bx bx-cog "></i>
                 </button>
-              </div>
+              </div> */}
 
             </div>
           </div>

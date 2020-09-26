@@ -4,3 +4,8 @@
   padding: 7px !important;
   width: 79px !important;
 }
+
+.navbar-brand-box {
+  background-color: white !important;
+  border-right: 0.2px solid #2a3042 !important;
+}

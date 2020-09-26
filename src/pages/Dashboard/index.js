@@ -27,9 +27,9 @@ class Dashboard extends Component {
         super(props);
         this.state = {
             reports: [
-                { title: "Orders", iconClass: "bx-copy-alt", description: "1,235" },
-                { title: "Revenue", iconClass: "bx-archive-in", description: "$35, 723" },
-                { title: "Average Price", iconClass: "bx-purchase-tag-alt", description: "$16.2" }
+                { title: "Profiles", iconClass: "bx-copy-alt", description: "125" },
+                { title: "Videos", iconClass: "bx-archive-in", description: "1205" },
+                { title: "Files", iconClass: "bx-purchase-tag-alt", description: "2560" }
             ],
             email: [
                 { title: "Week", linkto: "#", isActive: false },
@@ -59,7 +59,7 @@ class Dashboard extends Component {
                         <Row>
                             <Col xl="4">
                                 <WelcomeComp />
-                                <MonthlyEarning />
+                                {/* <MonthlyEarning /> */}
                             </Col>
                             <Col xl="8">
                                 <Row>
@@ -125,12 +125,12 @@ class Dashboard extends Component {
 
                         <Row>
                             <Col lg="12">
-                                <LatestTranaction />
+                                {/* <LatestTranaction /> */}
                             </Col>
                         </Row>
                     </Container>
                 </div>
-                <Modal isOpen={this.state.modal} role="dialog" autoFocus={true} centered={true} className="exampleModal" tabindex="-1" toggle={this.togglemodal}>
+                {/* <Modal isOpen={this.state.modal} role="dialog" autoFocus={true} centered={true} className="exampleModal" tabindex="-1" toggle={this.togglemodal}>
                     <div className="modal-content">
                         <ModalHeader toggle={this.togglemodal}>
                             Order Details
@@ -203,7 +203,7 @@ class Dashboard extends Component {
                             <Button type="button" color="secondary" onClick={this.togglemodal}>Close</Button>
                         </ModalFooter>
                     </div>
-                </Modal>
+                </Modal> */}
             </React.Fragment>
         );
     }

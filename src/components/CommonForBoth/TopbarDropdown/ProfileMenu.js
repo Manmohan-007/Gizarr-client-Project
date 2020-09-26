@@ -27,23 +27,19 @@ class ProfileMenu extends Component {
         }));
     }
 
-    componentDidMount()
-    {
-          if(localStorage.getItem("authUser"))
-           {
-             if(process.env.REACT_APP_DEFAULTAUTH === 'firebase')
-             {
+    componentDidMount() {
+        if (localStorage.getItem("authUser")) {
+            if (process.env.REACT_APP_DEFAULTAUTH === 'firebase') {
                 const obj = JSON.parse(localStorage.getItem("authUser"));
-                this.setState({name : obj.displayName});
-             }
-              else if((process.env.REACT_APP_DEFAULTAUTH === 'fake') || (process.env.REACT_APP_DEFAULTAUTH === 'jwt'))
-             {
+                this.setState({ name: obj.displayName });
+            }
+            else if ((process.env.REACT_APP_DEFAULTAUTH === 'fake') || (process.env.REACT_APP_DEFAULTAUTH === 'jwt')) {
                 const obj = JSON.parse(localStorage.getItem("authUser"));
-                this.setState({name : obj.username});
-             }
-          }
+                this.setState({ name: obj.username });
+            }
+        }
     }
-    
+
     render() {
 
         return (
@@ -59,10 +55,10 @@ class ProfileMenu extends Component {
                             <i className="bx bx-user font-size-16 align-middle mr-1"></i>
                             {this.props.t('Profile')}
                         </DropdownItem>
-                        <DropdownItem tag="a" href="/crypto-wallet">
+                        {/* <DropdownItem tag="a" href="/crypto-wallet">
                             <i className="bx bx-wallet font-size-16 align-middle mr-1"></i>
                             {this.props.t('My Wallet')}
-                        </DropdownItem>
+                        </DropdownItem> */}
                         <DropdownItem tag="a" href="#">
                             <span className="badge badge-success float-right mt-1">5</span><i className="bx bx-wrench font-size-17 align-middle mr-1"></i>
                             {this.props.t('Settings')}
